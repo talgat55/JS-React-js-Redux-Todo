@@ -3,7 +3,7 @@ import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";
 import VisibilityFilter from "./components/VisibilityFilter";
 
-const FILTERS = ['all', 'complete', 'inncomplete'];
+const FILTERS = ['all', 'complete', 'incomplete'];
 function App() {
   return (
     <div className="App">
