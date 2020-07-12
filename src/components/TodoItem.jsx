@@ -1,8 +1,11 @@
 import React from 'react';
 
-const TodoItem = ({todo}) =>{
+const TodoItem = ({todo,id, toggleTodo}) =>{
     return(
-        <li>
+        <li
+            className={todo.complete ? 'completed': ''}
+            onClick={ () => toggleTodo(id) }
+        >
             {todo.content}
         </li>
     )
